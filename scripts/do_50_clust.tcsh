@@ -295,7 +295,7 @@ set olay   = ${dset_stats}
 
 # from earlier checks, we saw that Cluster #2 from one of hte runs
 # above was a nice location to view
-set coords = ( `3dCM -Icent Clust_map_NO_MCC_mskd.nii.gz'<2>'` )
+set coords = ( `3dCM -Icent Clust_map_NO_MCC_mskd.nii.gz'<3>'` )
 
 # these settings are constant across all imgs
 set img_params = ( \
