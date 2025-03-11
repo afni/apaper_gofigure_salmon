@@ -58,4 +58,11 @@ Reynolds et al., (2023) and Taylor et al., (2024) for more details.
 Run `3dClustSim` to get cluster-based FWE adjustment tables for
 clusterizing results. This uses 3dFWHMx to estimate the spatial
 relatedness of noise with the mixed autocorrelation function 
-(mixed ACF; see Cox et al., 2016). 
+(mixed ACF; see Cox et al., 2016). There is some additional pre-work done
+to generate a more filled-in mask that fully spans the input dset (which
+is a non-typical salmon dataset here).  
+It also runs `@chauffeur_afni` to generate images used in the paper from
+a script. This is useful for automatically generating figure images,
+systematically creating them. This command even includes 3dClusterize
+commands and controls using transparent thresholding and outlining of
+the most significant results.
