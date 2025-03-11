@@ -4,7 +4,8 @@ salmon FMRI data used in the "Go Figure" draft.
 
 The contain a full task-based FMRI processing command through
 regression and quality control (QC) using `afni_proc.py` 
-(Reynolds et al., 2024). They also contain scripts for running 
+([Reynolds et al., 2024](https://doi.org/10.1162/imag_a_00347)). 
+They also contain scripts for running 
 cluster-based FWE adjustment, via `3dClustSim`, and image-creating 
 commands with `@chauffeur_afni`.
 
@@ -52,13 +53,16 @@ can be most usefully viewed interactively via:
     `open_apqc.py -infiles QC_PATH/index.html`
 ... where `QC_PATH` just stands for the path to the QC directory, which
 is located in the results directory from afni_proc.py processing. See
-Reynolds et al., (2023) and Taylor et al., (2024) for more details.
+[Reynolds et al., (2023)](https://www.frontiersin.org/articles/10.3389/fnins.2022.1073800/full/) 
+and [Taylor et al., (2024)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11382598/) 
+for more details.
 
 **do_50_clust.tcsh, run_50_clust.tcsh**  
 Run `3dClustSim` to get cluster-based FWE adjustment tables for
 clusterizing results. This uses 3dFWHMx to estimate the spatial
 relatedness of noise with the mixed autocorrelation function 
-(mixed ACF; see Cox et al., 2016). There is some additional pre-work done
+(mixed ACF; see [Cox et al., 2017](https://pubmed.ncbi.nlm.nih.gov/28398812/)). 
+There is some additional pre-work done
 to generate a more filled-in mask that fully spans the input dset (which
 is a non-typical salmon dataset here).  
 It also runs `@chauffeur_afni` to generate images used in the paper from
