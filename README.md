@@ -1,5 +1,7 @@
 # apaper_gofigure_salmon
-A set of AFNI-based processing scripts for the publicly available
+A set of AFNI-based 
+([Cox, 1996](https://pubmed.ncbi.nlm.nih.gov/10571921/)) 
+processing scripts for the publicly available
 salmon FMRI data used in the "Go Figure" draft.
 
 The contain a full task-based FMRI processing command through
