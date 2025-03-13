@@ -2,17 +2,18 @@
 A set of AFNI-based 
 ([Cox, 1996](https://pubmed.ncbi.nlm.nih.gov/10571921/)) 
 processing scripts for the publicly available
-salmon FMRI data used in the "Go Figure" draft.
+salmon FMRI data. This set of data and scripts were used 
+in Ex. 4 of the "Go Figure" draft.
 
-The contain a full task-based FMRI processing command through
-regression and quality control (QC) using `afni_proc.py` 
+The `scripts/` directory contains a full task-based FMRI processing 
+command through regression and quality control (QC) using `afni_proc.py` 
 ([Reynolds et al., 2024](https://doi.org/10.1162/imag_a_00347)). 
 They also contain scripts for running 
 cluster-based FWE adjustment, via `3dClustSim`, and image-creating 
 commands with `@chauffeur_afni`.
 
-The data for running these scripts directly is freely available:
-***
+The data for running these scripts directly is freely available:  
+https://osf.io/n4a37/
 
 The input data is in BIDS-ish format: the directory structure and
 naming conventions are BIDS-like for clarity and ease of
